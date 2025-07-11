@@ -1,4 +1,4 @@
-<h1 align="center">💬 InsightIQ RAG Chatbot</h1>
+<h1 align="left">💬 InsightIQ RAG Chatbot</h1>
 
 <p align="center">
 A powerful multi-format document assistant built using LangChain, ChromaDB, Ollama (LLaMA3), and Streamlit.
