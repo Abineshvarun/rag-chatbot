@@ -1,42 +1,48 @@
-# InsightIQ Chatbot
+💬 InsightIQ RAG Chatbot
+A powerful multi-format document assistant built using LangChain, ChromaDB, Ollama (LLaMA3), and Streamlit.
+InsightIQ supports PDF, CSV, DOCX, PPTX, TXT, XML, XLSX, JPG files with YOLOv8 + OCR for image understanding.
+It performs semantic search with re-ranking using CrossEncoder, and answers questions in real-time using a local LLM.
 
-A powerful Retrieval-Augmented Generation (RAG) chatbot that supports multi-format document upload (PDF, CSV, DOCX, PPTX, TXT, XML, and images). It utilizes local models (Ollama with LLaMA3), LangChain for document parsing, ChromaDB for vector storage, and advanced features like YOLOv8 for object detection and EasyOCR for text recognition in images.
+🚀 Features
+🧠 Local LLM inference (via Ollama)
 
-## 🔥 Features
+📄 Multi-format support: PDF, DOCX, PPTX, CSV, XML, XLSX, TXT, JPG
 
-- 💬 Chat interface using Streamlit
-- 📄 Supports PDF, CSV, DOCX, PPTX, TXT, XML, and image (JPG, PNG) inputs
-- 🔍 Document search and question answering using RAG
-- 🧠 Local LLM inference with Ollama (LLaMA3 or any supported model)
-- 🖼️ YOLOv8 object detection for images
-- 🔡 EasyOCR for extracting text from image files
-- 🧠 Embeddings via `nomic-embed-text-v1`
-- 📚 Chunking and vector storage with ChromaDB
-- 🗂️ CrossEncoder reranking for response accuracy
+🧾 OCR-based image text extraction (EasyOCR)
 
-## 🚀 Installation
+🦾 Object detection with YOLOv8
 
-1. Clone the repository
-   
+🔍 Vector store powered by ChromaDB
+
+🧩 Embeddings with nomic-embed-text
+
+📈 Re-ranking with CrossEncoder (cross-encoder/ms-marco-MiniLM-L-6-v2)
+
+💡 Chat history + conversational memory
+
+🖥️ Streamlit frontend
+
+📦 Requirements
+Python 3.10+
+Ollama
+Git
+Virtualenv (optional but recommended)
+
+🛠️ Installation
+
+# 1. Clone the repo
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
-2. Set up a Python virtual environment (recommended)
-
+# 2. (Optional) Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\
+source venv/bin/activate      # On Windows: venv\Scripts\activate
 
-3. Install dependencies
-
+# 3. Install dependencies
 pip install -r requirements.txt
 
-4. Install and run Ollama
-
-Download from: https://ollama.com
-
-ollama serve
+# 4. Start Ollama
 ollama run llama3
 
-5.Launch the Streamlit app
-
-streamlit run app.py
+# (Optional) Pull additional models
+ollama pull llama3
