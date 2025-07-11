@@ -1,0 +1,8 @@
+streamlit
+ollama
+chromadb
+langchain
+pymupdf
+python-docx
+python-pptx
+ultralytics
