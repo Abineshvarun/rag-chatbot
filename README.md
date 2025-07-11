@@ -1,6 +1,6 @@
 <h1 align="left">💬 InsightIQ RAG Chatbot</h1>
 
-<p align="center">
+<p align="left">
 A powerful multi-format document assistant built using LangChain, ChromaDB, Ollama (LLaMA3), and Streamlit.
 InsightIQ supports PDF, CSV, DOCX, PPTX, TXT, XML, XLSX, JPG files with YOLOv8 + OCR for image understanding.
 It performs semantic search with re-ranking using CrossEncoder, and answers questions in real-time using a local LLM.
